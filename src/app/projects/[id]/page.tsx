@@ -19,7 +19,9 @@ export default async function ProjectPage({
   params: { id: string };
 }) {
   try {
-    const project = await getProjectById(params.id);
+    // paramsをawaitしてからidプロパティにアクセス
+    const resolvedParams = await params;
+    const project = await getProjectById(resolvedParams.id);
 
     return (
       <div className="max-w-4xl mx-auto px-6 py-12">
