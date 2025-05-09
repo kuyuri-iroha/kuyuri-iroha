@@ -13,13 +13,14 @@ export async function generateStaticParams() {
   }));
 }
 
+interface PageProps {
+  params: { id: string };
+}
+
 export default async function ProjectPage({
   params,
-}: {
-  params: { id: string };
-}) {
+}: PageProps) {
   try {
-    // paramsは既にオブジェクトなのでawaitする必要はない
     const project = await getProjectById(params.id);
 
     return (
