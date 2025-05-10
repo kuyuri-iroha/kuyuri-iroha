@@ -37,14 +37,15 @@ export default async function ProjectPage({
 
         <article className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
           {project.mainVisual && (
-            <div className="relative h-64 w-full">
+            <div className="relative w-full" style={{ height: 'auto', minHeight: '200px', maxHeight: '600px' }}>
               <Image
                 src={project.mainVisual.url}
                 alt={project.title}
-                fill
-                sizes="100vw"
+                width={1200}
+                height={800}
                 priority
-                className="object-cover"
+                className="w-full h-auto object-contain"
+                style={{ maxHeight: '600px' }}
               />
             </div>
           )}
@@ -129,13 +130,14 @@ export default async function ProjectPage({
                 <h2 className="text-xl font-semibold mb-4">ギャラリー</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {project.images.map((image, index) => (
-                    <div key={index} className="relative h-64 w-full rounded-lg overflow-hidden">
+                    <div key={index} className="relative w-full rounded-lg overflow-hidden" style={{ height: 'auto', aspectRatio: '16/9' }}>
                       <Image
                         src={image.url}
                         alt={`${project.title} - 画像 ${index + 1}`}
-                        fill
+                        width={800}
+                        height={450}
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                   ))}

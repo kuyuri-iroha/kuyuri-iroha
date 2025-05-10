@@ -15,14 +15,10 @@ export default async function Home() {
       <section className="mb-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Kuyuri Iroha</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
-            ポートフォリオサイトへようこそ
-          </p>
         </div>
       </section>
 
       <section className="mb-16">
-        <h2 className="text-2xl font-bold mb-8 border-b pb-2">自己紹介</h2>
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 md:p-8">
           <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
             {about.icon && (
@@ -50,7 +46,6 @@ export default async function Home() {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold mb-8 border-b pb-2">プロジェクト</h2>
         {projects.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (

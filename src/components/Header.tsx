@@ -7,15 +7,6 @@ export default function Header() {
         <Link href="/" className="text-xl font-bold">
           Kuyuri Iroha
         </Link>
-        <nav>
-          <ul className="flex space-x-6">
-            <li>
-              <Link href="/" className="hover:underline">
-                ホーム
-              </Link>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
   );
