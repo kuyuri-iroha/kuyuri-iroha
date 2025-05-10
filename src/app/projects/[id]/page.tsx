@@ -14,14 +14,15 @@ export async function generateStaticParams() {
 }
 
 interface PageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export default async function ProjectPage({
   params,
 }: PageProps) {
   try {
-    const project = await getProjectById(params.id);
+    const resolvedParams = await params;
+    const project = await getProjectById(resolvedParams.id);
 
     return (
       <div className="max-w-4xl mx-auto px-6 py-12">
