@@ -1,0 +1,9 @@
+Error: Route "/projects/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ProjectPage (src\app\projects\[id]\page.tsx:20:47)
+  18 |
+  19 | export default async function ProjectPage({ params }: PageProps) {
+> 20 |   const project = await getProjectById(params.id);
+     |                                               ^
+  21 |
+  22 |   if (!project) {
+  23 |     console.error(`プロジェクト ${params.id} が見つかりませんでした`);

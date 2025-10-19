@@ -1,0 +1,29 @@
+id: 20250107_anycolor_nijisanji_shingijutsujisshojikkenibento_ver_2025_01
+createdAt: '2025-05-05T06:58:22.925Z'
+updatedAt: '2025-05-05T06:58:22.925Z'
+publishedAt: '2025-05-05T06:58:22.925Z'
+revisedAt: '2025-05-05T06:58:22.925Z'
+title: ANYCOLOR/にじさんじ 新技術実証実験イベント ver.2025.01
+genre:
+  - イマーシブライブ
+date: '2025-01-07T15:00:00.000Z'
+mainVisual:
+  url: >-
+    /images/projects/20250107_anycolor_nijisanji_shingijutsujisshojikkenibento_ver_2025_01/main.jpg
+  height: 630
+  width: 1200
+skill:
+  - Unity
+description: >-
+  <p>テクニカルアーティストとしてstu社チームに参加。Meta社Depth
+  APIを使用したタレントアバターの実在感を表現するシステムの開発や照明システムの開発を担当した。<br></p><p></p>
+images:
+  - url: >-
+      /images/projects/20250107_anycolor_nijisanji_shingijutsujisshojikkenibento_ver_2025_01/gallery-1.jpg
+    height: 1080
+    width: 1920
+  - url: >-
+      /images/projects/20250107_anycolor_nijisanji_shingijutsujisshojikkenibento_ver_2025_01/gallery-2.webp
+    height: 1080
+    width: 1920
+

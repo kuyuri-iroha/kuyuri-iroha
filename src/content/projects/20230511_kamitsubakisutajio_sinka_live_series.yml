@@ -1,0 +1,37 @@
+id: 20230511_kamitsubakisutajio_sinka_live_series
+createdAt: '2025-05-05T06:47:55.267Z'
+updatedAt: '2025-05-05T06:47:55.267Z'
+publishedAt: '2025-05-05T06:47:55.267Z'
+revisedAt: '2025-05-05T06:47:55.267Z'
+title: 神椿スタジオ SINKA LIVE SERIES
+genre:
+  - バーチャルライブ
+date: '2023-05-11T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20230511_kamitsubakisutajio_sinka_live_series/main.jpg
+  height: 727
+  width: 2188
+skill:
+  - Unity
+  - Houdini
+description: >-
+  <p>テクニカルアーティスト・VFXアーティストとしてVirtual Studio
+  MOOVチームに参加。Houdiniを活用したエフェクト制作やシェーダー開発を担当した。</p>
+images:
+  - url: >-
+      /images/projects/20230511_kamitsubakisutajio_sinka_live_series/gallery-1.jpg
+    height: 2160
+    width: 3840
+  - url: >-
+      /images/projects/20230511_kamitsubakisutajio_sinka_live_series/gallery-2.jpg
+    height: 2160
+    width: 3840
+  - url: >-
+      /images/projects/20230511_kamitsubakisutajio_sinka_live_series/gallery-3.jpg
+    height: 1080
+    width: 1920
+  - url: >-
+      /images/projects/20230511_kamitsubakisutajio_sinka_live_series/gallery-4.jpg
+    height: 1080
+    width: 1920
+

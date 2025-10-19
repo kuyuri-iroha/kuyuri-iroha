@@ -17,6 +17,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kuyuri Iroha - ポートフォリオ",
   description: "Kuyuri Irohaのポートフォリオサイトです。",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: ["/favicon.ico"],
+    apple: [{ url: "/icon-512.png", sizes: "512x512" }],
+  },
 };
 
 export default function RootLayout({

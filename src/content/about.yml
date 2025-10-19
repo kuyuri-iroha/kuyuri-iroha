@@ -1,0 +1,39 @@
+createdAt: '2025-05-05T06:18:36.875Z'
+updatedAt: '2025-05-05T07:18:49.061Z'
+publishedAt: '2025-05-05T06:25:42.544Z'
+revisedAt: '2025-05-05T07:18:49.061Z'
+name: Kuyuri Iroha（深谷 陸）
+icon:
+  url: /images/about/icon.png
+  height: 512
+  width: 512
+summary:
+  - イマーシブイベントやオンライン配信で体験全体を支えるVFX演出とリアルタイム制御を制作しています。
+  - >-
+    Unityを軸に演出プランニングからシェーダー実装、プレビュー環境の整備まで一気通貫で担当し、バーチャルライブも没入感の高いコンテンツ群の一部として支援しています。
+background:
+  - XR/メタバース領域でキャリアをスタートし、テクニカルアーティストとしてイマーシブイベントを中心に活動。
+  - Unityの演出実装とHoudiniによるVFX制作を両軸に、大型IPや放送案件まで幅広く担当してきました。
+  - オンラインライブも含め、観客の没入感を高めるリアルタイム表現の設計を得意としています。
+skills:
+  - Unity（イマーシブ演出の実装、Timeline制御、ツール開発）
+  - Houdini / VFX Graph を用いた大規模エフェクト制作
+  - リアルタイム映像配信向けシェーダー・パイプライン構築
+  - イマーシブイベント / バーチャルライブの演出ディレクション支援
+caseStudies:
+  - title: TVアニメ『進撃の巨人』ワールドワイド・アフターパーティー
+    detail: Houdiniを活用したイマーシブ演出のVFXを担当。空間的なエネルギー表現とライティングの同期を実現しました。
+  - title: HOLOLIVE ALTERNATIVE PROTOLIVE＃2 ヤマトファンタジア
+    detail: テクニカルアーティストとしてリアルタイム演出を実装。Unity上でのVFXパイプラインと演出ツールを構築しました。
+  - title: ヰ世界情緒 Virtual mini live「parallel canvas Ⅱ」
+    detail: バーチャルライブ内の主要VFXを開発。アーティストの演出意図に沿った光・粒子表現を最適化しました。
+valueStatement: >-
+  アーティストとエンジニアの橋渡し役として、イマーシブ体験に必要な空間演出と技術設計を一貫して支援します。シェーダーや自動化スクリプトを自作し、短納期でも没入感の高い映像体験を保証するワークフローを構築します。
+contacts:
+  - label: Mail
+    value: kuyuri.iroha[at]gmail.com
+    href: mailto:kuyuri.iroha@gmail.com
+  - label: X (Twitter)
+    value: '@kuyuri_iroha'
+    href: https://x.com/kuyuri_iroha
+message: 新しい演出やコラボレーションのご相談はお気軽にどうぞ。リモート・対面どちらでも対応可能です。

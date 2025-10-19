@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Project } from '@/lib/microcms';
+import { Project } from '@/lib/content';
 
 type Props = {
   project: Project;

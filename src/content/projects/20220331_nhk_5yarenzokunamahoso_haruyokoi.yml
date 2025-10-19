@@ -1,0 +1,21 @@
+id: 20220331_nhk_5yarenzokunamahoso_haruyokoi
+createdAt: '2025-05-05T06:52:33.398Z'
+updatedAt: '2025-05-05T06:52:33.398Z'
+publishedAt: '2025-05-05T06:52:33.398Z'
+revisedAt: '2025-05-05T06:52:33.398Z'
+title: NHK ５夜連続生放送 春よ来い
+genre:
+  - 放送
+date: '2022-03-31T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20220331_nhk_5yarenzokunamahoso_haruyokoi/main.png
+  height: 1020
+  width: 1920
+skill:
+  - Unity
+description: <p>テクニカルアーティストとしてstuチームに参加。番組最後に登場する、視聴者のコメントを花に見立てた桜の演出を実装した。</p>
+images:
+  - url: /images/projects/20220331_nhk_5yarenzokunamahoso_haruyokoi/gallery-1.jpg
+    height: 1080
+    width: 1920
+

@@ -1,0 +1,27 @@
+id: 20220127_akuairo_in_wanda_rando
+createdAt: '2025-05-05T07:34:06.955Z'
+updatedAt: '2025-05-05T07:34:06.955Z'
+publishedAt: '2025-05-05T07:34:06.955Z'
+revisedAt: '2025-05-05T07:34:06.955Z'
+title: 湊あくあ ワンマンライブ2022「あくあ色 in わんだ～☆らんど♪」
+genre:
+  - バーチャルライブ
+date: '2022-01-27T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20220127_akuairo_in_wanda_rando/main.jpg
+  height: 1080
+  width: 1920
+skill:
+  - Unity
+description: <p>テクニカルアーティストとしてstu開発チームに参加。ライブ演出の一部の開発を担当した。</p>
+images:
+  - url: /images/projects/20220127_akuairo_in_wanda_rando/gallery-1.jpg
+    height: 894
+    width: 1600
+  - url: /images/projects/20220127_akuairo_in_wanda_rando/gallery-2.jpg
+    height: 1080
+    width: 1920
+  - url: /images/projects/20220127_akuairo_in_wanda_rando/gallery-3.jpg
+    height: 867
+    width: 1541
+

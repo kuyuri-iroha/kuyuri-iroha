@@ -1,0 +1,29 @@
+id: 20230303_fukakaisan_so
+createdAt: '2025-05-05T07:22:49.479Z'
+updatedAt: '2025-05-05T07:23:18.491Z'
+publishedAt: '2025-05-05T07:23:18.491Z'
+revisedAt: '2025-05-05T07:23:18.491Z'
+title: 花譜 3rd ONE-MAN LIVE 「不可解参(想)」
+genre:
+  - バーチャルライブ
+date: '2023-03-03T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20230303_fukakaisan_so/main.jpg
+  height: 917
+  width: 1627
+skill:
+  - Unity
+description: >-
+  <p>テクニカルアーティスト・VFXアーティストとしてVirtual Studio
+  MOOVチームに参加。Houdiniを活用したエフェクト制作やシェーダー開発を担当した。</p>
+images:
+  - url: /images/projects/20230303_fukakaisan_so/gallery-1.jpg
+    height: 1277
+    width: 2265
+  - url: /images/projects/20230303_fukakaisan_so/gallery-2.jpg
+    height: 1273
+    width: 2267
+  - url: /images/projects/20230303_fukakaisan_so/gallery-3.jpg
+    height: 1277
+    width: 2267
+

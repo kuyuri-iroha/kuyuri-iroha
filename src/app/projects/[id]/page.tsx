@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { getProjectById, getProjects } from '@/lib/microcms';
-import parse from 'html-react-parser';
+import { getProjectById, getProjects } from '@/lib/content';
 import { notFound } from 'next/navigation';
 
 // 静的パラメータの生成
@@ -14,16 +13,19 @@ export async function generateStaticParams() {
 }
 
 interface PageProps {
-  params: { id: string };
+  params: Promise<{ id: string }> | { id: string };
 }
 
-export default async function ProjectPage({
-  params,
-}: PageProps) {
-  try {
-    const project = await getProjectById(params.id);
+export default async function ProjectPage({ params }: PageProps) {
+  const { id } = await params;
+  const project = await getProjectById(id);
 
-    return (
+  if (!project) {
+    console.error(`プロジェクト ${id} が見つかりませんでした`);
+    notFound();
+  }
+
+  return (
       <div className="max-w-4xl mx-auto px-6 py-12">
         <div className="mb-6">
           <Link href="/" className="text-blue-500 hover:underline flex items-center gap-1">
@@ -36,14 +38,15 @@ export default async function ProjectPage({
 
         <article className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
           {project.mainVisual && (
-            <div className="relative h-64 w-full">
+            <div className="w-full bg-gray-100 dark:bg-gray-900">
               <Image
                 src={project.mainVisual.url}
                 alt={project.title}
-                fill
+                width={project.mainVisual.width ?? 1920}
+                height={project.mainVisual.height ?? 1080}
                 sizes="100vw"
                 priority
-                className="object-cover"
+                className="h-auto w-full object-contain"
               />
             </div>
           )}
@@ -145,7 +148,4 @@ export default async function ProjectPage({
         </article>
       </div>
     );
-  } catch (error) {
-    notFound();
-  }
 }

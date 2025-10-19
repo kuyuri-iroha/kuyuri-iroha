@@ -1,0 +1,21 @@
+id: 20221201_totonouuchuraunji
+createdAt: '2025-05-05T07:05:10.521Z'
+updatedAt: '2025-05-05T07:07:41.450Z'
+publishedAt: '2025-05-05T07:05:10.521Z'
+revisedAt: '2025-05-05T07:07:41.450Z'
+title: GINZA 456 つなぐプロジェクト「ととのう宇宙ラウンジ」
+genre:
+  - サイネージ
+date: '2022-12-01T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20221201_totonouuchuraunji/main.jpg
+  height: 1536
+  width: 1920
+skill:
+  - Unity
+description: <p>システムエンジニアとしてstu社開発チームに参加。ロビーサイネージの開発を担当。</p>
+images:
+  - url: /images/projects/20221201_totonouuchuraunji/gallery-1.png
+    height: 1920
+    width: 1080
+

@@ -1,0 +1,22 @@
+id: 20211021_smoes_verse_sakura_chill_beats
+createdAt: '2025-05-05T07:26:54.084Z'
+updatedAt: '2025-05-05T07:30:49.533Z'
+publishedAt: '2025-05-05T07:30:06.956Z'
+revisedAt: '2025-05-05T07:30:49.533Z'
+title: SMOES VERSE / Sakura Chill Beats
+genre:
+  - Web
+  - メタバース
+date: '2021-10-21T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20211021_smoes_verse_sakura_chill_beats/main.png
+  height: 1440
+  width: 2560
+skill:
+  - Babylon.js
+description: <p>Webフロントエンジニアとして参加。Web上のメタバース空間をBabylon.jsを使用して実装。</p>
+images:
+  - url: /images/projects/20211021_smoes_verse_sakura_chill_beats/gallery-1.png
+    height: 1440
+    width: 2560
+

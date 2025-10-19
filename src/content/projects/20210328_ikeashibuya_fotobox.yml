@@ -1,0 +1,24 @@
+id: 20210328_ikeashibuya_fotobox
+createdAt: '2025-05-05T07:01:41.328Z'
+updatedAt: '2025-05-05T07:01:41.328Z'
+publishedAt: '2025-05-05T07:01:41.328Z'
+revisedAt: '2025-05-05T07:01:41.328Z'
+title: IKEA渋谷 Fotobox
+genre:
+  - インスタレーション
+date: '2021-03-28T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20210328_ikeashibuya_fotobox/main.png
+  height: 1061
+  width: 1600
+skill:
+  - Unity
+description: <p>システムエンジニアとして開発チームに参加。撮影システム開発とUI実装を担当。</p>
+images:
+  - url: /images/projects/20210328_ikeashibuya_fotobox/gallery-1.webp
+    height: 540
+    width: 800
+  - url: /images/projects/20210328_ikeashibuya_fotobox/gallery-2.jpg
+    height: 360
+    width: 480
+
