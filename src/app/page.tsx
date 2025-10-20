@@ -5,9 +5,6 @@ import Image from 'next/image';
 export default async function Home() {
   const [projects, about] = await Promise.all([getProjects(), getAbout()]);
 
-  // デバッグ用：プロジェクトデータをコンソールに出力
-  console.log('Projects data:', JSON.stringify(projects, null, 2));
-
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 space-y-16">
       <section className="text-center mb-16">
