@@ -1,9 +1,62 @@
-Error: Route "/projects/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
-    at ProjectPage (src\app\projects\[id]\page.tsx:20:47)
-  18 |
-  19 | export default async function ProjectPage({ params }: PageProps) {
-> 20 |   const project = await getProjectById(params.id);
-     |                                               ^
-  21 |
-  22 |   if (!project) {
-  23 |     console.error(`プロジェクト ${params.id} が見つかりませんでした`);
+19:05:02.287 Running build in Portland, USA (West) – pdx1
+19:05:02.288 Build machine configuration: 4 cores, 8 GB
+19:05:02.349 Cloning github.com/kuyuri-iroha/kuyuri-iroha (Branch: master, Commit: e79b544)
+19:05:02.556 Previous build caches not available
+19:05:03.724 Cloning completed: 1.374s
+19:05:03.940 Running "vercel build"
+19:05:04.303 Vercel CLI 48.2.9
+19:05:04.654 Installing dependencies...
+19:05:14.506 
+19:05:14.507 added 354 packages in 10s
+19:05:14.507 
+19:05:14.507 146 packages are looking for funding
+19:05:14.507   run `npm fund` for details
+19:05:14.554 Detected Next.js version: 15.5.5
+19:05:14.558 Running "npm run build"
+19:05:14.657 
+19:05:14.657 > kuyuri-iroha@0.1.0 build
+19:05:14.657 > next build
+19:05:14.657 
+19:05:16.039 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+19:05:16.040 This information is used to shape Next.js' roadmap and prioritize features.
+19:05:16.040 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+19:05:16.040 https://nextjs.org/telemetry
+19:05:16.040 
+19:05:16.114    ▲ Next.js 15.5.5
+19:05:16.114 
+19:05:16.162    Creating an optimized production build ...
+19:05:24.345  ✓ Compiled successfully in 6.0s
+19:05:24.348    Linting and checking validity of types ...
+19:05:27.024    Collecting page data ...
+19:05:28.178    Generating static pages (0/19) ...
+19:05:28.788    Generating static pages (4/19) 
+19:05:28.841    Generating static pages (9/19) 
+19:05:28.841    Generating static pages (14/19) 
+19:05:28.879  ✓ Generating static pages (19/19)
+19:05:29.234    Finalizing page optimization ...
+19:05:29.234    Collecting build traces ...
+19:05:33.576 
+19:05:33.579 Route (app)                                                                               Size  First Load JS
+19:05:33.579 ┌ ○ /                                                                                    175 B         111 kB
+19:05:33.579 ├ ○ /_not-found                                                                          133 B         102 kB
+19:05:33.579 ├ ○ /about                                                                               161 B         107 kB
+19:05:33.579 └ ● /projects/[id]                                                                       175 B         111 kB
+19:05:33.579     ├ /projects/20250412_virtual_expo
+19:05:33.579     ├ /projects/20250107_anycolor_nijisanji_shingijutsujisshojikkenibento_ver_2025_01
+19:05:33.579     ├ /projects/20231205_parallel_canvas_ii
+19:05:33.579     └ [+11 more paths]
+19:05:33.579 + First Load JS shared by all                                                           102 kB
+19:05:33.580   ├ chunks/255-839588e0f3decf6f.js                                                     45.7 kB
+19:05:33.580   ├ chunks/4bd1b696-c023c6e3521b1417.js                                                54.2 kB
+19:05:33.580   └ other shared chunks (total)                                                         1.9 kB
+19:05:33.580 
+19:05:33.580 
+19:05:33.580 ○  (Static)  prerendered as static content
+19:05:33.580 ●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+19:05:33.580 
+19:05:33.667 Traced Next.js server files in: 35.187ms
+19:05:33.743 Created all serverless functions in: 75.489ms
+19:05:33.755 Collected static files (public/, static/, .next/static): 8.184ms
+19:05:33.899 Build Completed in /vercel/output [29s]
+19:05:34.071 Deploying outputs...
+19:06:08.991 An unexpected error happened when running this build. We have been notified of the problem. This may be a transient error. If the problem persists, please contact Vercel Support https://vercel.com/help

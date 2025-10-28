@@ -21,3 +21,9 @@ Recent commits are short, task-focused statements (often Japanese descriptors li
 
 ## Security & Configuration Tips
 Store secrets in `.env.local`; never commit API keys. The site depends on `NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN` and `NEXT_PUBLIC_MICROCMS_API_KEY`, so document any new variables you introduce. Update `next.config.ts` if remote image domains or headers change, and note any microCMS schema updates alongside the corresponding code modifications.
+
+## Agent Tips
+- Next.js 15 以降の App Router 動的ルートでは `params` が `Promise` で渡ってくるケースがあるため、`.next/types` の生成結果に合わせて `await params` するかたちで型整合性を保つこと。
+- Vercel のビルド成果物サイズが 100MB を超えると汎用的な `An unexpected error happened…` が出るため、`.next/cache` など不要キャッシュは `postbuild` スクリプトで削除しておくと安全。
+- 大量の JSON を `console.log` すると Vercel のビルドログが肥大化し、アップロード中に失敗する恐れがあるので、本番ビルド前にデバッグログを外すこと。
+- `public/` 配下の静的アセットは空白や記号を含まないシンプルなファイル名に揃えると、Vercel のデプロイ時に扱いやすくトラブルも減らせる。

@@ -1,0 +1,30 @@
+id: 20250927_yoro_expo
+createdAt: '2025-10-27T22:43:02.893Z'
+updatedAt: '2025-10-27T22:43:02.893Z'
+publishedAt: '2025-09-27T00:00:00.000Z'
+revisedAt: '2025-10-27T22:43:02.893Z'
+title: 2025年大阪・関西万博 AI養老先生
+genre:
+  - AIアバター
+  - 産学合同研究開発
+date: '2025-09-27T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20250927_yoro_expo/thmb.jpg
+  height: 720
+  width: 1280
+skill:
+  - Unreal Engine
+  - Python
+  - Javascript
+description: >-
+  <p>2025年大阪・関西万博にて、東京大学とNTTの合同プロジェクトに参加し、養老孟司先生のAIアバターシステムの設計開発を担当しました。</p>
+images:
+  - url: /images/projects/20250927_yoro_expo/img01.jpg
+    height: 720
+    width: 1280
+  - url: /images/projects/20250927_yoro_expo/img02.jpg
+    height: 696
+    width: 1280
+  - url: /images/projects/20250927_yoro_expo/img03.jpg
+    height: 720
+    width: 1280
