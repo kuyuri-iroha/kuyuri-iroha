@@ -52,8 +52,35 @@ export type Project = {
   github?: string;
 };
 
+export type Service = {
+  id: string;
+  title: string;
+  catchphrase: string;
+  problem: string;
+  solution: string;
+  benefit: string;
+  image: ImageAsset;
+  relatedProjectIds: string[];
+};
+
+export type Point = {
+  title: string;
+  description: string;
+};
+
+export type BusinessPageData = {
+  pageTitle: string;
+  subTitle: string;
+  heroImage: string;
+  lead: string;
+  points: Point[];
+  services: Service[];
+  contactMessage: string;
+};
+
 const CONTENT_ROOT = path.join(process.cwd(), 'src', 'content');
 const ABOUT_PATH = path.join(CONTENT_ROOT, 'about.yml');
+const BUSINESS_PATH = path.join(CONTENT_ROOT, 'business.yml');
 const PROJECTS_DIR = path.join(CONTENT_ROOT, 'projects');
 
 const ensureFileExists = (filePath: string) => {
@@ -86,12 +113,15 @@ const loadProjects = (): Project[] => {
 };
 
 const aboutData = readYaml<About>(ABOUT_PATH);
+const businessData = fs.existsSync(BUSINESS_PATH) ? readYaml<BusinessPageData>(BUSINESS_PATH) : undefined;
 const projectsData = loadProjects();
 
 export const about: About = aboutData;
 export const projects: Project[] = projectsData;
 
 export const getAbout = async (): Promise<About> => aboutData;
+
+export const getBusinessPageData = async (): Promise<BusinessPageData | undefined> => businessData;
 
 export const getProjects = async (): Promise<Project[]> => projectsData;
 

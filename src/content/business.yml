@@ -1,0 +1,61 @@
+pageTitle: "ビジネスソリューション"
+subTitle: "先端技術を、現場の「解決策」へ"
+heroImage: "/images/projects/20250412_virtual_expo/main.jpg"
+lead: "私たちは、UnityやHoudiniといった高度なビジュアル技術を、単なる「装飾」としてではなく、企業の課題（集客、販促、ブランディング）を解決する「機能」として提供します。"
+
+points:
+  - title: "「伝わる」をデザインする"
+    description: "専門的な技術用語を使わず、エンドユーザーに直感的に価値が伝わる体験を設計します。"
+  - title: "成果にコミットする"
+    description: "「作っただけ」で終わらせない。来場者数、滞在時間、コンバージョンなど、ビジネスの成果に貢献するクリエイティブを提案します。"
+  - title: "ワンストップ開発"
+    description: "企画から実装、展示現場の設営サポートまで、技術的な側面をトータルでバックアップします。"
+
+services:
+  - id: "virtual-space"
+    title: "バーチャル展示会・ショールーム構築"
+    catchphrase: "時間と場所の制約を超えた、持続可能な顧客接点"
+    problem: "「リアル展示会はコストがかかる」「遠方の顧客にアプローチできない」「イベント後の追客が難しい」"
+    solution: "Webブラウザで完結する軽量かつ高品質な3D空間を構築。アプリのインストール不要で、誰でもアクセス可能な自社展示会場を制作します。"
+    benefit: "24時間365日の営業が可能になり、リード獲得の機会を最大化。物理的な設営・撤去コストも削減できます。"
+    image:
+      url: "/images/projects/20250412_virtual_expo/main.jpg"
+      width: 1920
+      height: 1080
+    relatedProjectIds: 
+      - "20250412_virtual_expo"
+      - "20250927_yoro_expo"
+      - "20221201_totonouuchuraunji"
+
+  - id: "interactive-installations"
+    title: "体験型デジタルサイネージ・イベント演出"
+    catchphrase: "「素通り」を「体験」に変える、集客装置"
+    problem: "「店舗の前を通る人が立ち止まらない」「イベントブースが地味で目立たない」「SNSでの拡散が弱い」"
+    solution: "人の動きや顔に反応するインタラクティブな映像演出（プロジェクションマッピング、センサー連動サイネージ）を導入。"
+    benefit: "強烈なアイキャッチ効果で足を止めさせ、能動的な体験を通じてブランドの記憶を深く刻み込みます。SNSシェアのきっかけも創出。"
+    image:
+      url: "/images/projects/20210328_ikeashibuya_fotobox/main.png"
+      width: 1920
+      height: 1080
+    relatedProjectIds:
+      - "20250901_konicaminolta"
+      - "20210328_ikeashibuya_fotobox"
+      - "20230727_ginza_456_trim_the_earth_meguru_manabu_sekainokabonnyutoraru"
+      - "20220331_nhk_5yarenzokunamahoso_haruyokoi"
+
+  - id: "immersive-web"
+    title: "没入型Webサイト・プロモーション"
+    catchphrase: "ブランドの世界観を「体験」させるWebサイト"
+    problem: "「コーポレートサイトが他社と似たり寄ったり」「商品の魅力が静止画とテキストだけでは伝わらない」"
+    solution: "WebGL/3D技術を用いた、奥行きと動きのあるWebサイト制作。スクロールに連動した物語性のある演出。"
+    benefit: "ユーザーの滞在時間を延ばし、ブランドへの理解と好意度（エンゲージメント）を飛躍的に高めます。"
+    image:
+      url: "/images/projects/20230414_parallel_canvas/main.avif"
+      width: 1920
+      height: 1080
+    relatedProjectIds:
+      - "20230414_parallel_canvas"
+      - "20231104_shingekinokyojin"
+      - "20231205_parallel_canvas_ii"
+
+contactMessage: "貴社の課題を、デジタルの力で解決しませんか？\nまずはお気軽にご相談ください。"

@@ -1,0 +1,32 @@
+id: 20250901_konicaminolta
+createdAt: '2025-12-06T22:43:02.893Z'
+updatedAt: '2025-12-06T22:43:02.893Z'
+publishedAt: '2025-09-01T00:00:00.000Z'
+revisedAt: '2025-12-06T22:43:02.893Z'
+title: コニカミノルタジャパン イマーシブサークルビジョン
+genre:
+  - サイネージ
+  - リアルタイム
+date: '2025-09-01T15:00:00.000Z'
+mainVisual:
+  url: /images/projects/20250901_konicaminolta/thumb.jpg
+  height: 720
+  width: 1280
+skill:
+  - Unity
+  - Shader
+description: >-
+  <p>コニカミノルタジャパン新オフィス内イマーシブサークルビジョンにおいて、stu社チームに参加しビジュアル開発を担当しました。</p>
+images:
+  - url: /images/projects/20250901_konicaminolta/img01.jpg
+    height: 720
+    width: 1280
+  - url: /images/projects/20250901_konicaminolta/img02.jpg
+    height: 696
+    width: 1280
+  - url: /images/projects/20250901_konicaminolta/img03.jpg
+    height: 720
+    width: 1280
+  - url: /images/projects/20250901_konicaminolta/img04.jpg
+    height: 720
+    width: 1280
