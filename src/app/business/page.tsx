@@ -69,11 +69,11 @@ export default async function BusinessPage() {
               解決策のご提案
             </h2>
             <p className="mt-4 text-slate-500 dark:text-slate-400">
-              御社のビジネス課題に合わせて、最適なソリューションを提供します
+              貴社のビジネス課題に合わせて、最適なソリューションを提供します
             </p>
           </div>
 
-          {data.services.map((service, index) => {
+          {data.services.map((service) => {
             const relatedProjects = allProjects.filter((p) =>
               service.relatedProjectIds?.includes(p.id)
             );
@@ -81,76 +81,65 @@ export default async function BusinessPage() {
             return (
               <div 
                 key={service.id} 
-                className={`flex flex-col gap-12 overflow-hidden rounded-3xl bg-white shadow-lg dark:bg-slate-900 md:flex-row ${
-                  index % 2 === 1 ? 'md:flex-row-reverse' : ''
-                }`}
+                className="flex flex-col gap-8 overflow-hidden rounded-3xl bg-white p-8 shadow-lg dark:bg-slate-900 md:p-12"
               >
-                <div className="relative h-64 w-full md:h-auto md:w-1/2">
-                  <Image
-                    src={service.image.url}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                
-                <div className="flex w-full flex-col justify-center p-8 md:w-1/2 md:p-12">
-                  <div className="mb-6">
+                <div className="w-full">
+                  <div className="mb-8">
                     <h3 className="text-sm font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
                       {service.title}
                     </h3>
-                    <p className="mt-2 text-2xl font-bold leading-tight text-slate-900 dark:text-white">
+                    <p className="mt-2 text-2xl font-bold leading-tight text-slate-900 dark:text-white md:text-3xl">
                       {service.catchphrase}
                     </p>
                   </div>
 
-                  <div className="space-y-6">
-                    <div className="rounded-xl bg-red-50 p-4 dark:bg-red-900/20">
+                  <div className="grid gap-6 md:grid-cols-3">
+                    <div className="rounded-xl bg-red-50 p-6 dark:bg-red-900/20">
                       <p className="text-sm font-bold text-red-600 dark:text-red-400">課題</p>
-                      <p className="mt-1 text-slate-700 dark:text-slate-300">{service.problem}</p>
+                      <p className="mt-2 text-slate-700 dark:text-slate-300">{service.problem}</p>
                     </div>
                     
-                    <div className="rounded-xl bg-blue-50 p-4 dark:bg-blue-900/20">
+                    <div className="rounded-xl bg-blue-50 p-6 dark:bg-blue-900/20">
                       <p className="text-sm font-bold text-blue-600 dark:text-blue-400">解決策</p>
-                      <p className="mt-1 text-slate-700 dark:text-slate-300">{service.solution}</p>
+                      <p className="mt-2 text-slate-700 dark:text-slate-300">{service.solution}</p>
                     </div>
 
-                    <div>
-                      <p className="font-bold text-slate-900 dark:text-white">導入メリット</p>
-                      <p className="text-slate-600 dark:text-slate-400">{service.benefit}</p>
+                    <div className="rounded-xl bg-slate-50 p-6 dark:bg-slate-800/50">
+                      <p className="text-sm font-bold text-slate-900 dark:text-white">導入メリット</p>
+                      <p className="mt-2 text-slate-600 dark:text-slate-400">{service.benefit}</p>
                     </div>
-
-                    {relatedProjects.length > 0 && (
-                      <div className="border-t border-slate-100 pt-6 dark:border-slate-800">
-                        <p className="mb-4 text-sm font-bold text-slate-500 dark:text-slate-400">
-                          関連実績
-                        </p>
-                        <div className="grid grid-cols-2 gap-4">
-                          {relatedProjects.map((project) => (
-                            <Link
-                              key={project.id}
-                              href={`/projects/${project.id}`}
-                              className="group block"
-                            >
-                              <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-100">
-                                {project.mainVisual && (
-                                  <Image
-                                    src={project.mainVisual.url}
-                                    alt={project.title}
-                                    fill
-                                    className="object-cover transition-transform group-hover:scale-105"
-                                  />
-                                )}
-                              </div>
-                              <p className="mt-2 text-xs font-bold text-slate-700 line-clamp-2 group-hover:text-blue-600 dark:text-slate-300">
-                                {project.title}
-                              </p>
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    )}
                   </div>
+
+                  {relatedProjects.length > 0 && (
+                    <div className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-800">
+                      <p className="mb-4 text-sm font-bold text-slate-500 dark:text-slate-400">
+                        関連実績
+                      </p>
+                      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                        {relatedProjects.map((project) => (
+                          <Link
+                            key={project.id}
+                            href={`/projects/${project.id}`}
+                            className="group block"
+                          >
+                            <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-100">
+                              {project.mainVisual && (
+                                <Image
+                                  src={project.mainVisual.url}
+                                  alt={project.title}
+                                  fill
+                                  className="object-cover transition-transform group-hover:scale-105"
+                                />
+                              )}
+                            </div>
+                            <p className="mt-2 text-xs font-bold text-slate-700 line-clamp-2 group-hover:text-blue-600 dark:text-slate-300">
+                              {project.title}
+                            </p>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             );

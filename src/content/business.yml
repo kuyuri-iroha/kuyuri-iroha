@@ -1,7 +1,7 @@
 pageTitle: "ビジネスソリューション"
 subTitle: "先端技術を、現場の「解決策」へ"
-heroImage: "/images/projects/20250412_virtual_expo/main.jpg"
-lead: "私たちは、UnityやHoudiniといった高度なビジュアル技術を、単なる「装飾」としてではなく、企業の課題（集客、販促、ブランディング）を解決する「機能」として提供します。"
+heroImage: "/images/business/main.png"
+lead: "私たちは、UnityやHoudiniといった高度なビジュアル技術を、単なる「装飾」としてではなく、貴社の課題（集客、販促、ブランディング）を解決する「機能」として提供します。"
 
 points:
   - title: "「伝わる」をデザインする"
@@ -18,10 +18,6 @@ services:
     problem: "「リアル展示会はコストがかかる」「遠方の顧客にアプローチできない」「イベント後の追客が難しい」"
     solution: "Webブラウザで完結する軽量かつ高品質な3D空間を構築。アプリのインストール不要で、誰でもアクセス可能な自社展示会場を制作します。"
     benefit: "24時間365日の営業が可能になり、リード獲得の機会を最大化。物理的な設営・撤去コストも削減できます。"
-    image:
-      url: "/images/projects/20250412_virtual_expo/main.jpg"
-      width: 1920
-      height: 1080
     relatedProjectIds: 
       - "20250412_virtual_expo"
       - "20250927_yoro_expo"
@@ -33,10 +29,6 @@ services:
     problem: "「店舗の前を通る人が立ち止まらない」「イベントブースが地味で目立たない」「SNSでの拡散が弱い」"
     solution: "人の動きや顔に反応するインタラクティブな映像演出（プロジェクションマッピング、センサー連動サイネージ）を導入。"
     benefit: "強烈なアイキャッチ効果で足を止めさせ、能動的な体験を通じてブランドの記憶を深く刻み込みます。SNSシェアのきっかけも創出。"
-    image:
-      url: "/images/projects/20210328_ikeashibuya_fotobox/main.png"
-      width: 1920
-      height: 1080
     relatedProjectIds:
       - "20250901_konicaminolta"
       - "20210328_ikeashibuya_fotobox"
@@ -49,10 +41,6 @@ services:
     problem: "「コーポレートサイトが他社と似たり寄ったり」「商品の魅力が静止画とテキストだけでは伝わらない」"
     solution: "WebGL/3D技術を用いた、奥行きと動きのあるWebサイト制作。スクロールに連動した物語性のある演出。"
     benefit: "ユーザーの滞在時間を延ばし、ブランドへの理解と好意度（エンゲージメント）を飛躍的に高めます。"
-    image:
-      url: "/images/projects/20230414_parallel_canvas/main.avif"
-      width: 1920
-      height: 1080
     relatedProjectIds:
       - "20230414_parallel_canvas"
       - "20231104_shingekinokyojin"

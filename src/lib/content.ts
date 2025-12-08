@@ -59,7 +59,7 @@ export type Service = {
   problem: string;
   solution: string;
   benefit: string;
-  image: ImageAsset;
+  image?: ImageAsset;
   relatedProjectIds: string[];
 };
 
