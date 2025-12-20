@@ -4,6 +4,15 @@ updatedAt: '2025-05-05T07:30:49.533Z'
 publishedAt: '2025-05-05T07:30:06.956Z'
 revisedAt: '2025-05-05T07:30:49.533Z'
 title: SMOES VERSE / Sakura Chill Beats
+role:
+  - System Architect
+  - Developer
+company: "Sony Music Entertainment"
+period:
+  start: "2021-05"
+  end: "2021-10"
+teamSize: "3名"
+employmentType: "Freelance"
 genre:
   - Web
   - メタバース
@@ -14,7 +23,14 @@ mainVisual:
   width: 2560
 skill:
   - Babylon.js
-description: <p>Webフロントエンジニアとして参加。Web上のメタバース空間をBabylon.jsを使用して実装。</p>
+  - React
+  - JavaScript
+  - GLSL
+  - Web
+description: >-
+  <p><b>担当: システム設計開発</b></p>
+  <p>ソニー・ミュージックエンタテインメントのプロジェクトにて、Webブラウザ上で動作するメタバース空間の実装を担当しました。</p>
+  <p>Babylon.jsとReactを使用し、多数のユーザーがアバターとして参加する空間を描画。Web上でのパフォーマンスを確保するため、VAT（Vertex Animation Texture）の仕組みを応用し、ボーン行列情報をテクスチャに焼き込んでストリーミングすることで、大量のアバターアニメーションを軽量に描画するシステムを開発しました。</p>
 images:
   - url: /images/projects/20211021_smoes_verse_sakura_chill_beats/gallery-1.png
     height: 1440

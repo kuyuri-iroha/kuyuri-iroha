@@ -4,6 +4,14 @@ updatedAt: '2025-05-05T06:47:55.267Z'
 publishedAt: '2025-05-05T06:47:55.267Z'
 revisedAt: '2025-05-05T06:47:55.267Z'
 title: 神椿スタジオ SINKA LIVE SERIES
+role:
+  - Effect Artist
+company: "Virtual Studio MOOV"
+period:
+  start: "2023-04"
+  end: "2024-01"
+teamSize: "58名"
+employmentType: "Freelance"
 genre:
   - バーチャルライブ
 date: '2023-05-11T15:00:00.000Z'
@@ -14,9 +22,13 @@ mainVisual:
 skill:
   - Unity
   - Houdini
+  - HLSL
+  - C#
+  - Real-time Streaming
 description: >-
-  <p>テクニカルアーティスト・VFXアーティストとしてVirtual Studio
-  MOOVチームに参加。Houdiniを活用したエフェクト制作やシェーダー開発を担当した。</p>
+  <p><b>担当: エフェクトアーティスト</b></p>
+  <p>Virtual Studio MOOVの一員として、V.W.Pのライブ演出におけるエフェクトデザインと実装を担当しました。</p>
+  <p>独特の世界観を持つグループのライブにおいて、特に「変身エフェクト」のような、動いているアバターの輪郭を正確に追従する高精度なエフェクト演出をスクリプト制御で実現。また、ポストプロセスをジャックして空間全体の描画を変化させる演出や、Houdini/EmberGenを用いたダイナミックなボリュームレンダリングなど、プリレンダリングとリアルタイムの境界を感じさせない品質のエフェクトを実装しました。</p>
 images:
   - url: >-
       /images/projects/20230511_kamitsubakisutajio_sinka_live_series/gallery-1.jpg

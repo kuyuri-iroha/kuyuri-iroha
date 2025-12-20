@@ -17,16 +17,16 @@ export default async function BusinessPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-slate-900 text-white">
+      <div className="relative overflow-hidden bg-black text-white border-b border-white/10">
         <div className="absolute inset-0 opacity-40">
           {data.heroImage && (
             <Image
               src={data.heroImage}
               alt="Hero Background"
               fill
-              className="object-cover"
+              className="object-cover grayscale"
               priority
             />
           )}
@@ -35,7 +35,7 @@ export default async function BusinessPage() {
           <h1 className="text-4xl font-bold leading-tight md:text-6xl">
             {data.pageTitle}
           </h1>
-          <p className="mt-6 text-xl font-medium text-blue-200 md:text-2xl">
+          <p className="mt-6 text-xl font-medium text-gray-300 md:text-2xl">
             {data.subTitle}
           </p>
         </div>
@@ -44,17 +44,17 @@ export default async function BusinessPage() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         {/* Philosophy / Introduction */}
         <section className="mb-24 text-center">
-          <p className="mx-auto max-w-3xl text-2xl font-bold leading-relaxed text-slate-800 dark:text-slate-100">
+          <p className="mx-auto max-w-3xl text-2xl font-bold leading-relaxed text-white">
             {data.lead}
           </p>
-          
+
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {data.points.map((point) => (
-              <div key={point.title} className="rounded-2xl bg-white p-8 shadow-sm dark:bg-slate-900">
-                <h3 className="mb-4 text-xl font-bold text-blue-600 dark:text-blue-400">
+              <div key={point.title} className="rounded-2xl bg-white/5 p-8 shadow-sm border border-white/10">
+                <h3 className="mb-4 text-xl font-bold text-white">
                   {point.title}
                 </h3>
-                <p className="text-slate-600 dark:text-slate-300">
+                <p className="text-gray-400">
                   {point.description}
                 </p>
               </div>
@@ -65,10 +65,10 @@ export default async function BusinessPage() {
         {/* Services / Products */}
         <section className="space-y-24">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-3xl font-bold text-white">
               解決策のご提案
             </h2>
-            <p className="mt-4 text-slate-500 dark:text-slate-400">
+            <p className="mt-4 text-gray-400">
               貴社のビジネス課題に合わせて、最適なソリューションを提供します
             </p>
           </div>
@@ -79,40 +79,40 @@ export default async function BusinessPage() {
             );
 
             return (
-              <div 
-                key={service.id} 
-                className="flex flex-col gap-8 overflow-hidden rounded-3xl bg-white p-8 shadow-lg dark:bg-slate-900 md:p-12"
+              <div
+                key={service.id}
+                className="flex flex-col gap-8 overflow-hidden rounded-3xl bg-white/5 p-8 shadow-lg md:p-12 border border-white/10"
               >
                 <div className="w-full">
                   <div className="mb-8">
-                    <h3 className="text-sm font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                    <h3 className="text-sm font-bold uppercase tracking-wider text-gray-400">
                       {service.title}
                     </h3>
-                    <p className="mt-2 text-2xl font-bold leading-tight text-slate-900 dark:text-white md:text-3xl">
+                    <p className="mt-2 text-2xl font-bold leading-tight text-white md:text-3xl">
                       {service.catchphrase}
                     </p>
                   </div>
 
                   <div className="grid gap-6 md:grid-cols-3">
-                    <div className="rounded-xl bg-red-50 p-6 dark:bg-red-900/20">
-                      <p className="text-sm font-bold text-red-600 dark:text-red-400">課題</p>
-                      <p className="mt-2 text-slate-700 dark:text-slate-300">{service.problem}</p>
-                    </div>
-                    
-                    <div className="rounded-xl bg-blue-50 p-6 dark:bg-blue-900/20">
-                      <p className="text-sm font-bold text-blue-600 dark:text-blue-400">解決策</p>
-                      <p className="mt-2 text-slate-700 dark:text-slate-300">{service.solution}</p>
+                    <div className="rounded-xl bg-white/5 p-6 border border-white/5">
+                      <p className="text-sm font-bold text-gray-300">課題</p>
+                      <p className="mt-2 text-gray-400">{service.problem}</p>
                     </div>
 
-                    <div className="rounded-xl bg-slate-50 p-6 dark:bg-slate-800/50">
-                      <p className="text-sm font-bold text-slate-900 dark:text-white">導入メリット</p>
-                      <p className="mt-2 text-slate-600 dark:text-slate-400">{service.benefit}</p>
+                    <div className="rounded-xl bg-white/10 p-6 border border-white/10">
+                      <p className="text-sm font-bold text-white">解決策</p>
+                      <p className="mt-2 text-gray-300">{service.solution}</p>
+                    </div>
+
+                    <div className="rounded-xl bg-white/5 p-6 border border-white/5">
+                      <p className="text-sm font-bold text-gray-300">導入メリット</p>
+                      <p className="mt-2 text-gray-400">{service.benefit}</p>
                     </div>
                   </div>
 
                   {relatedProjects.length > 0 && (
-                    <div className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-800">
-                      <p className="mb-4 text-sm font-bold text-slate-500 dark:text-slate-400">
+                    <div className="mt-8 border-t border-white/10 pt-8">
+                      <p className="mb-4 text-sm font-bold text-gray-500">
                         関連実績
                       </p>
                       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -122,7 +122,7 @@ export default async function BusinessPage() {
                             href={`/projects/${project.id}`}
                             className="group block"
                           >
-                            <div className="relative aspect-video overflow-hidden rounded-lg bg-slate-100">
+                            <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-800">
                               {project.mainVisual && (
                                 <Image
                                   src={project.mainVisual.url}
@@ -132,7 +132,7 @@ export default async function BusinessPage() {
                                 />
                               )}
                             </div>
-                            <p className="mt-2 text-xs font-bold text-slate-700 line-clamp-2 group-hover:text-blue-600 dark:text-slate-300">
+                            <p className="mt-2 text-xs font-bold text-gray-400 line-clamp-2 group-hover:text-white transition-colors">
                               {project.title}
                             </p>
                           </Link>
@@ -147,15 +147,15 @@ export default async function BusinessPage() {
         </section>
 
         {/* CTA */}
-        <section className="mt-32 rounded-3xl bg-blue-600 px-6 py-16 text-center text-white">
+        <section className="mt-32 rounded-3xl bg-white text-black px-6 py-16 text-center">
           <h2 className="text-3xl font-bold">お問い合わせ</h2>
-          <p className="mx-auto mt-6 max-w-2xl whitespace-pre-wrap text-lg text-blue-100">
+          <p className="mx-auto mt-6 max-w-2xl whitespace-pre-wrap text-lg text-gray-600">
             {data.contactMessage}
           </p>
           <div className="mt-10">
-            <a 
+            <a
               href="mailto:kuyuri.iroha@gmail.com"
-              className="inline-block rounded-full bg-white px-8 py-4 font-bold text-blue-600 transition-colors hover:bg-blue-50"
+              className="inline-block rounded-full bg-black px-8 py-4 font-bold text-white transition-colors hover:bg-gray-800"
             >
               相談してみる
             </a>

@@ -4,6 +4,14 @@ updatedAt: '2025-05-05T06:58:22.925Z'
 publishedAt: '2025-05-05T06:58:22.925Z'
 revisedAt: '2025-05-05T06:58:22.925Z'
 title: ANYCOLOR/にじさんじ 新技術実証実験イベント ver.2025.01
+role:
+  - Technical Artist
+company: "stu / ANYCOLOR"
+period:
+  start: "2024-12"
+  end: "2025-01"
+teamSize: "7名"
+employmentType: "Freelance"
 genre:
   - イマーシブライブ
 date: '2025-01-07T15:00:00.000Z'
@@ -14,9 +22,14 @@ mainVisual:
   width: 1200
 skill:
   - Unity
+  - C#
+  - HLSL
+  - Meta Quest 3
+  - MR (Mixed Reality)
 description: >-
-  <p>テクニカルアーティストとしてstu社チームに参加。Meta社Depth
-  APIを使用したタレントアバターの実在感を表現するシステムの開発や照明システムの開発を担当した。<br></p><p></p>
+  <p><b>担当: テクニカルアーティスト</b></p>
+  <p>stu社チームの一員として、にじさんじのMRライブイベントにて、Meta Quest 3のDepthAPIを利用したオクルージョンレンダリングシステムと、現実に即した照明演出システムの開発を担当しました。</p>
+  <p>当初PICO4で想定されていた構成を、検証を経てMeta Quest 3 + DepthAPIの構成に変更し、Meta社とも連携しながら実装を進めました。ライブ本番では50台のHMDを一斉稼働させ、実会場の構造とバーチャル演出が整合するようキャリブレーションを実施。演者は遠隔地からモーションキャプチャで参加するテレプレゼンス形式で行われ、実在感のあるMRライブを実現しました。</p>
 images:
   - url: >-
       /images/projects/20250107_anycolor_nijisanji_shingijutsujisshojikkenibento_ver_2025_01/gallery-1.jpg

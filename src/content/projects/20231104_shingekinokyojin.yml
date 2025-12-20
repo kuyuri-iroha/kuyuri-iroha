@@ -4,6 +4,14 @@ updatedAt: '2025-05-05T07:16:54.881Z'
 publishedAt: '2025-05-05T06:40:59.380Z'
 revisedAt: '2025-05-05T07:16:54.881Z'
 title: TVアニメ放送完結記念 『進撃の巨人』ワールドワイド・アフターパーティー
+role:
+  - Technical Artist
+company: "stu / 電通"
+period:
+  start: "2023-05"
+  end: "2023-11"
+teamSize: "34名"
+employmentType: "Freelance"
 genre:
   - イマーシブライブ
 date: '2023-11-04T15:00:00.000Z'
@@ -14,7 +22,13 @@ mainVisual:
 skill:
   - Unity
   - Houdini
-description: <p>VFXアーティストとしてstu社チームに参加。Houdiniを活用したVFX制作から、ゲームエンジンへの実装まで行なった。</p>
+  - EmberGen
+  - HLSL
+  - Cloud Rendering
+description: >-
+  <p><b>担当: テクニカルアーティスト</b></p>
+  <p>stu社チーム・電通チームとして、イベントフィナーレのイマーシブムービーにおけるVFX演出とイベント発火システムを開発しました。</p>
+  <p>ユーザーのアバターがムービーシーンに参加する演出において、多人数接続時の描画負荷を解決するためにクラウドレンダリングを活用。エフェクト制作では、進撃の巨人の世界観に不可欠な「蒸気」「砂煙」「信煙弾」などの表現をHoudiniとEmberGenでシミュレーションし、VDB（ボリュームデータ）として出力。Unity上でVDBを高品質にレンダリングするための専用シェーダーを開発し、ボリューム感のある煙表現を実現しました。</p>
 images:
   - url: /images/projects/20231104_shingekinokyojin/gallery-1.jpg
     height: 816

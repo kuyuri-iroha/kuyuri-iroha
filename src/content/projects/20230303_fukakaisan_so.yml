@@ -4,6 +4,14 @@ updatedAt: '2025-05-05T07:23:18.491Z'
 publishedAt: '2025-05-05T07:23:18.491Z'
 revisedAt: '2025-05-05T07:23:18.491Z'
 title: 花譜 3rd ONE-MAN LIVE 「不可解参(想)」
+role:
+  - Effect Artist
+company: "Virtual Studio MOOV"
+period:
+  start: "2022-10"
+  end: "2023-03"
+teamSize: "57名"
+employmentType: "Freelance"
 genre:
   - バーチャルライブ
 date: '2023-03-03T15:00:00.000Z'
@@ -13,9 +21,13 @@ mainVisual:
   width: 1627
 skill:
   - Unity
+  - HLSL
+  - C#
+  - Real-time Streaming
 description: >-
-  <p>テクニカルアーティスト・VFXアーティストとしてVirtual Studio
-  MOOVチームに参加。Houdiniを活用したエフェクト制作やシェーダー開発を担当した。</p>
+  <p><b>担当: エフェクトアーティスト</b></p>
+  <p>Virtual Studio MOOVの一員として、花譜のライブ演出におけるエフェクトデザインと開発を担当しました。</p>
+  <p>「不可解」シリーズの集大成かつ「SINKA LIVE」シリーズの幕開けとなる本公演にて、不可解シリーズを踏襲した情緒的な桜の演出や、新シリーズを象徴するSF的なテレポート・ワープゲート演出など、ライブのコンセプトに合わせた多様なエフェクトを実装・制御しました。</p>
 images:
   - url: /images/projects/20230303_fukakaisan_so/gallery-1.jpg
     height: 1277

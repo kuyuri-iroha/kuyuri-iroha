@@ -4,6 +4,15 @@ updatedAt: '2025-05-05T07:01:41.328Z'
 publishedAt: '2025-05-05T07:01:41.328Z'
 revisedAt: '2025-05-05T07:01:41.328Z'
 title: IKEA渋谷 Fotobox
+role:
+  - System Architect
+  - Developer
+company: "IKEA"
+period:
+  start: "2021-01"
+  end: "2021-03"
+teamSize: "5名"
+employmentType: "Freelance"
 genre:
   - インスタレーション
 date: '2021-03-28T15:00:00.000Z'
@@ -13,7 +22,12 @@ mainVisual:
   width: 1600
 skill:
   - Unity
-description: <p>システムエンジニアとして開発チームに参加。撮影システム開発とUI実装を担当。</p>
+  - C#
+  - MediaPipe
+description: >-
+  <p><b>担当: システム設計開発</b></p>
+  <p>IKEA渋谷に設置されたフォトブース「Fotobox」のソフトウェア開発を担当しました。</p>
+  <p>Unity上で複数のWebカメラを制御する撮影システムに加え、MediaPipeを用いた顔認識システムを実装。撮影後の編集フローにおいて、ユーザーの顔に合わせて自動的にメイクアップエフェクトを追従させる機能などを開発し、スムーズで楽しい撮影体験を提供しました。</p>
 images:
   - url: /images/projects/20210328_ikeashibuya_fotobox/gallery-1.webp
     height: 540

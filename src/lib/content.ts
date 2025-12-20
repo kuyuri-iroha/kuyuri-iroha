@@ -19,6 +19,17 @@ export type CaseStudy = {
   detail: string;
 };
 
+export type SkillMatrixItem = {
+  name: string;
+  level: 'Captivating' | 'Experienced' | 'Beginner' | 'Learning' | 'None';
+  note?: string;
+};
+
+export type SkillMatrixCategory = {
+  category: string;
+  items: SkillMatrixItem[];
+};
+
 export type About = {
   createdAt?: string;
   updatedAt?: string;
@@ -28,6 +39,8 @@ export type About = {
   summary: string[];
   background: string[];
   skills: string[];
+  skillMatrix: SkillMatrixCategory[];
+  hobbies: string[];
   caseStudies: CaseStudy[];
   valueStatement: string;
   contacts: ContactLink[];
@@ -43,6 +56,14 @@ export type Project = {
   revisedAt: string;
   title: string;
   description: string;
+  role: string[]; // Expanded to array for multiple roles if needed
+  company: string;
+  period: {
+    start: string;
+    end: string;
+  };
+  teamSize: string; // Keep as string to allow "15名" format or number
+  employmentType: string;
   mainVisual?: ImageAsset;
   date?: string;
   genre?: string[];

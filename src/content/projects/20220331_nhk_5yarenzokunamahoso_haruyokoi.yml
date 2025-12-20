@@ -4,6 +4,14 @@ updatedAt: '2025-05-05T06:52:33.398Z'
 publishedAt: '2025-05-05T06:52:33.398Z'
 revisedAt: '2025-05-05T06:52:33.398Z'
 title: NHK ５夜連続生放送 春よ来い
+role:
+  - Effect Artist
+company: "stu / NHK"
+period:
+  start: "2022-02"
+  end: "2022-03"
+teamSize: "2名"
+employmentType: "Freelance"
 genre:
   - 放送
 date: '2022-03-31T15:00:00.000Z'
@@ -13,7 +21,13 @@ mainVisual:
   width: 1920
 skill:
   - Unity
-description: <p>テクニカルアーティストとしてstuチームに参加。番組最後に登場する、視聴者のコメントを花に見立てた桜の演出を実装した。</p>
+  - C#
+  - HLSL
+  - Real-time Broadcast
+description: >-
+  <p><b>担当: エフェクトアーティスト</b></p>
+  <p>stuチームの一員として、NHK春の大型生放送番組「春よ来い」の番組ラストを飾る桜の演出を担当しました。</p>
+  <p>視聴者から寄せられたコメントを「枝垂れ桜」の花びらに見立てて咲かせるインタラクティブな演出をUnityで実装。放送波に乗せるため、Key & Fill信号を出力して実写映像とリアルタイムに合成（重畳描画）するシステムを構築・運用しました。</p>
 images:
   - url: /images/projects/20220331_nhk_5yarenzokunamahoso_haruyokoi/gallery-1.jpg
     height: 1080

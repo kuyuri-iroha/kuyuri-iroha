@@ -4,6 +4,14 @@ updatedAt: '2025-05-05T07:43:08.595Z'
 publishedAt: '2025-05-05T07:43:08.595Z'
 revisedAt: '2025-05-05T07:43:08.595Z'
 title: ヰ世界情緒 Virtual mini live「parallel canvas Ⅱ」
+role:
+  - Effect Artist
+company: "TRIBALCON"
+period:
+  start: "2023-11"
+  end: "2023-12"
+teamSize: "5名"
+employmentType: "Freelance"
 genre:
   - バーチャルライブ
 date: '2023-12-05T15:00:00.000Z'
@@ -12,8 +20,14 @@ mainVisual:
   height: 481
   width: 1024
 skill:
-  - Unity
-description: <p>VFXアーティストとしてTRIBALCON.チームに参加。一部エフェクトの開発を担当した。</p>
+  - Unity (URP)
+  - HLSL
+  - C#
+description: >-
+  <p><b>担当: エフェクトアーティスト</b></p>
+  <p>TRIBALCON社のチームとして、バーチャルミニライブにおけるロウソク灯体エフェクトの制作と制御システムを構築しました。</p>
+  <p>モバイル端末を含むリアルタイム配信での描画負荷を抑えつつ、写実的でボリューム感のある炎を表現するため、通常の半透明描画とは異なる描画パスでディストーション（陽炎）エフェクトを実現しました。</p>
+  <p>また、シーン内に配置された100本以上のロウソクを楽曲に合わせて個別に制御したり、炎の勢いを動的に変化させるための演出システムも開発しました。</p>
 images:
   - url: /images/projects/20231205_parallel_canvas_ii/gallery-1.png
     height: 701

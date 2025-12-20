@@ -4,6 +4,15 @@ updatedAt: '2025-10-19T22:40:04.809Z'
 publishedAt: '2025-10-19T22:40:04.809Z'
 revisedAt: '2025-10-19T22:40:04.809Z'
 title: バーチャル万博 いのち動的平衡館
+role:
+  - System Architect
+  - Developer
+company: "stu"
+period:
+  start: "2025-01"
+  end: "2025-04"
+teamSize: "20名"
+employmentType: "Freelance"
 genre:
   - メタバース
 date: '2025-04-12T15:00:00.000Z'
@@ -12,9 +21,14 @@ mainVisual:
   height: 630
   width: 1200
 skill:
-  - Unity
+  - Unity (Visual Scripting)
+  - C#
+  - Map Generation
 description: >-
-  <p>テクニカルアーティストとしてstu社チームに参加。メタバース空間内の迷路生成ロジックの設計開発、会話イベントや演出イベントの開発を担当。<br></p><p></p>
+  <p><b>担当: システム設計開発</b></p>
+  <p>stu社チームの一員として、バーチャル万博「いのち動的平衡館」における動的マップ生成システムおよびイベント制御システムの開発を担当しました。</p>
+  <p>プラットフォームの制約により任意のC#スクリプトの使用が制限され、Unity純正のノードベースビジュアルスクリプティング（旧Bolt）のみでの実装が求められる環境下で、複雑な迷路生成アルゴリズムや演出イベントの発火システムを構築しました。</p>
+  <p>演出の相互作用部分の実装も含め、制約の中でゲーム的なインタラクションとリッチな体験を実現し、会期終了まで安定して稼働しました。</p>
 images:
   - url: /images/projects/20250412_virtual_expo/gallery-1.jpg
     height: 1080

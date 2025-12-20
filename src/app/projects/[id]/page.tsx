@@ -3,10 +3,8 @@ import Link from 'next/link';
 import { getProjectById, getProjects } from '@/lib/content';
 import { notFound } from 'next/navigation';
 
-// 静的パラメータの生成
 export async function generateStaticParams() {
   const projects = await getProjects();
-  
   return projects.map((project) => ({
     id: project.id,
   }));
@@ -21,123 +19,76 @@ export default async function ProjectPage({ params }: PageProps) {
   const project = await getProjectById(id);
 
   if (!project) {
-    console.error(`プロジェクト ${id} が見つかりませんでした`);
     notFound();
   }
 
   return (
-      <div className="max-w-4xl mx-auto px-6 py-12">
-        <div className="mb-6">
-          <Link href="/" className="text-blue-500 hover:underline flex items-center gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            プロジェクト一覧に戻る
-          </Link>
-        </div>
+    <div className="pb-20">
+      {/* Hero Header */}
+      <div className="relative h-[50vh] w-full bg-gray-900 border-b border-white/10">
+        {project.mainVisual ? (
+          <>
+            <Image
+              src={project.mainVisual.url}
+              alt={project.title}
+              fill
+              priority
+              className="object-cover opacity-60"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent" />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
+        )}
 
-        <article className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
-          {project.mainVisual && (
-            <div className="w-full bg-gray-100 dark:bg-gray-900">
-              <Image
-                src={project.mainVisual.url}
-                alt={project.title}
-                width={project.mainVisual.width ?? 1920}
-                height={project.mainVisual.height ?? 1080}
-                sizes="100vw"
-                priority
-                className="h-auto w-full object-contain"
-              />
+        <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 max-w-7xl mx-auto">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm text-gray-400 mb-6 hover:text-white transition-colors uppercase tracking-widest"
+          >
+            ← Back to Projects
+          </Link>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-xl max-w-4xl leading-tight">
+            {project.title}
+          </h1>
+          {project.genre && (
+            <div className="flex flex-wrap gap-2 mb-2">
+              {project.genre.map((g) => (
+                <span key={g} className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-sm text-gray-200 backdrop-blur-sm">
+                  {g}
+                </span>
+              ))}
             </div>
           )}
+        </div>
+      </div>
 
-          <div className="p-6 md:p-8">
-            <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-            
-            {project.date && (
-              <p className="text-gray-500 dark:text-gray-400 mb-4">
-                {new Date(project.date).toLocaleDateString('ja-JP', {
-                  year: 'numeric',
-                  month: 'long',
-                })}
-              </p>
-            )}
-            
-            <div className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-              {project.description.replace(/<\/?[^>]+(>|$)/g, "")}
+      <div className="max-w-7xl mx-auto px-6 pt-12">
+        <div className="grid lg:grid-cols-[1fr,320px] gap-12">
+
+          {/* Main Content */}
+          <div className="space-y-12">
+            <div className="glass-panel p-8 rounded-3xl">
+              <h2 className="text-xl font-bold text-white mb-6 border-l-4 border-white pl-4">Project Overview</h2>
+              <div
+                className="prose prose-invert prose-lg max-w-none text-gray-300"
+                dangerouslySetInnerHTML={{ __html: project.description }}
+              />
             </div>
 
-            {/* ジャンル */}
-            {project.genre && project.genre.length > 0 && (
-              <div className="mb-4">
-                <h2 className="text-xl font-semibold mb-3">ジャンル</h2>
-                <div className="flex flex-wrap gap-2">
-                  {project.genre.map((g) => (
-                    <span
-                      key={g}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"
-                    >
-                      {g}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* スキル */}
-            {project.skill && project.skill.length > 0 && (
-              <div className="mb-6">
-                <h2 className="text-xl font-semibold mb-3">使用技術</h2>
-                <div className="flex flex-wrap gap-2">
-                  {project.skill.map((s) => (
-                    <span
-                      key={s}
-                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm"
-                    >
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div className="flex gap-4 mb-8">
-              {project.url && (
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
-                >
-                  サイトを見る
-                </a>
-              )}
-              
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors"
-                >
-                  GitHub
-                </a>
-              )}
-            </div>
-
-            {/* 画像ギャラリー */}
+            {/* Gallery */}
             {project.images && project.images.length > 0 && (
-              <div className="mt-8">
-                <h2 className="text-xl font-semibold mb-4">ギャラリー</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="space-y-6">
+                <h2 className="text-xl font-bold text-white border-l-4 border-white pl-4">Gallery</h2>
+                <div className="grid gap-6">
                   {project.images.map((image, index) => (
-                    <div key={index} className="relative h-64 w-full rounded-lg overflow-hidden">
+                    <div key={index} className="relative rounded-2xl overflow-hidden border border-white/5 bg-gray-900 group">
                       <Image
                         src={image.url}
-                        alt={`${project.title} - 画像 ${index + 1}`}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover"
+                        alt={`${project.title} shot ${index + 1}`}
+                        width={image.width ?? 1920}
+                        height={image.height ?? 1080}
+                        className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
                       />
                     </div>
                   ))}
@@ -145,7 +96,83 @@ export default async function ProjectPage({ params }: PageProps) {
               </div>
             )}
           </div>
-        </article>
+
+          {/* Sidebar Metadata */}
+          <div className="space-y-8">
+            <div className="glass-panel p-6 rounded-2xl sticky top-24">
+              <h3 className="text-lg font-bold text-white mb-6 pb-2 border-b border-white/10">Project Details</h3>
+
+              <dl className="space-y-5">
+                {project.company && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-widest text-gray-500 mb-1">Company / Team</dt>
+                    <dd className="text-white font-medium">{project.company}</dd>
+                  </div>
+                )}
+
+                {project.role && project.role.length > 0 && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-widest text-gray-500 mb-1">Role</dt>
+                    <dd className="text-white font-medium">
+                      {project.role.join(', ')}
+                    </dd>
+                  </div>
+                )}
+
+                {project.period && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-widest text-gray-500 mb-1">Period</dt>
+                    <dd className="text-gray-300 font-mono text-sm">
+                      {project.period.start} - {project.period.end}
+                    </dd>
+                  </div>
+                )}
+
+                {project.teamSize && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-widest text-gray-500 mb-1">Team Size</dt>
+                    <dd className="text-gray-300">{project.teamSize}</dd>
+                  </div>
+                )}
+
+                {project.employmentType && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-widest text-gray-500 mb-1">Employment</dt>
+                    <dd className="text-gray-300 text-sm">{project.employmentType}</dd>
+                  </div>
+                )}
+
+                {project.skill && (
+                  <div>
+                    <dt className="text-xs uppercase tracking-widest text-gray-500 mb-2">Tech Stack</dt>
+                    <dd className="flex flex-wrap gap-2">
+                      {project.skill.map(s => (
+                        <span key={s} className="px-2 py-1 bg-white/5 text-gray-300 text-xs rounded border border-white/10">
+                          {s}
+                        </span>
+                      ))}
+                    </dd>
+                  </div>
+                )}
+
+                <div className="pt-6 mt-6 border-t border-white/10 flex flex-col gap-3">
+                  {project.url && (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="block w-full py-3 bg-white text-black hover:bg-gray-200 text-center rounded-xl font-bold transition-colors">
+                      Visit Site
+                    </a>
+                  )}
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="block w-full py-3 bg-white/5 hover:bg-white/10 text-white text-center rounded-xl font-bold transition-colors border border-white/10">
+                      GitHub
+                    </a>
+                  )}
+                </div>
+              </dl>
+            </div>
+          </div>
+
+        </div>
       </div>
-    );
+    </div>
+  );
 }

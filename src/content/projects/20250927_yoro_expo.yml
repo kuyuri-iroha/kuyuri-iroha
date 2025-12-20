@@ -4,6 +4,15 @@ updatedAt: '2025-10-27T22:43:02.893Z'
 publishedAt: '2025-09-27T00:00:00.000Z'
 revisedAt: '2025-10-27T22:43:02.893Z'
 title: 2025年大阪・関西万博 AI養老先生
+role:
+  - System Architect
+  - Developer
+company: "東京大学 / NTT"
+period:
+  start: "2025-04"
+  end: "2025-10"
+teamSize: "15名"
+employmentType: "Freelance"
 genre:
   - AIアバター
   - 産学合同研究開発
@@ -13,11 +22,17 @@ mainVisual:
   height: 720
   width: 1280
 skill:
-  - Unreal Engine
+  - Unreal Engine 5
   - Python
-  - Javascript
+  - JavaScript
+  - C++
+  - RAG
+  - MetaHuman
 description: >-
-  <p>2025年大阪・関西万博にて、東京大学とNTTの合同プロジェクトに参加し、養老孟司先生のAIアバターシステムの設計開発を担当しました。</p>
+  <p><b>担当: システム設計開発</b></p>
+  <p>東京大学とNTTの合同プロジェクトとして、大阪・関西万博にて展示された「AI養老先生」のアバターシステムを設計開発しました。</p>
+  <p>東大側とNTT側の双方のニーズを調整しながらシステム全体を構築。応答速度を担保するため、音声認識（STT）にはChromeブラウザの内蔵機能を活用し、RAG（Retrieval-Augmented Generation）技術を組み合わせることで即応性の高い対話システムを実現しました。出力部ではUE5上のMetaHumanを使用し、リアルなアバターによる発話表現を行っています。</p>
+  <p>納品時は実際に大阪万博現地でのセットアップと調整を行い、会期中の安定稼働をサポートしました。</p>
 images:
   - url: /images/projects/20250927_yoro_expo/img01.jpg
     height: 720
