@@ -22,6 +22,11 @@ export default async function ProjectPage({ params }: PageProps) {
     notFound();
   }
 
+  const galleryImages = [
+    ...(project.mainVisual ? [project.mainVisual] : []),
+    ...(project.images || []),
+  ];
+
   return (
     <div className="pb-20">
       {/* Hero Header */}
@@ -77,11 +82,11 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
 
             {/* Gallery */}
-            {project.images && project.images.length > 0 && (
+            {galleryImages.length > 0 && (
               <div className="space-y-6">
                 <h2 className="text-xl font-bold text-white border-l-4 border-white pl-4">Gallery</h2>
                 <div className="grid gap-6">
-                  {project.images.map((image, index) => (
+                  {galleryImages.map((image, index) => (
                     <div key={index} className="relative rounded-2xl overflow-hidden border border-white/5 bg-gray-900 group">
                       <Image
                         src={image.url}
